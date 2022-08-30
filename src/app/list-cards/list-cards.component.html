@@ -1,0 +1,28 @@
+<label class="">
+        Hombre ({{productList.length}})
+        </label>
+<div class="content-list">
+
+    <mat-selection-list #products>
+
+        <mat-list-option *ngFor="let product of productList">
+            <!-- {{product | json }} -->
+            <img class="imageSize" src="{{product.image}}" alt="Tenis Retro, OLIVO, large image number 0" title="Tenis Retro, OLIVO" itemprop="image">
+            <label>{{product.name}}</label>
+            <label>{{product.price}}</label>
+            <label>{{product.description}}</label>
+            <label>{{product.sex}}</label>
+            <label>{{product.color}}</label>
+            <img class="mobile" src="/assets/colors.png">
+            <div class="heartZone">
+                <input id="heart" type="checkbox" />
+                <label class="heart" for="heart">❤</label>
+            </div>
+        </mat-list-option>
+    </mat-selection-list>
+
+    <!-- <p class="content-list">
+        Options selected: {{products.selectedOptions.selected.length}}
+    </p> -->
+
+</div>

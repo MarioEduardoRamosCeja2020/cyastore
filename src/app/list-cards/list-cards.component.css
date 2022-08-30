@@ -1,0 +1,102 @@
+.mat-list-option {
+    color: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+[id="heart"] {
+    position: absolute;
+    left: -100vw;
+}
+
+[for="heart"] {
+    color: #aab8c2;
+    cursor: pointer;
+    font-size: 1.4em;
+    align-self: center;
+    transition: color 0.2s ease-in-out;
+}
+
+[for="heart"]:hover {
+    color: grey;
+}
+
+[for="heart"]::selection {
+    color: none;
+    background: transparent;
+}
+
+[for="heart"]::moz-selection {
+    color: none;
+    background: transparent;
+}
+
+[id="heart"]:checked+label {
+    color: #e2264d;
+    will-change: font-size;
+    animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+}
+
+@keyframes heart {
+    0%,
+    17.5% {
+        font-size: 0;
+    }
+}
+
+.mat-pseudo-checkbox-checked,
+.mat-pseudo-checkbox-indeterminate,
+.mat-accent .mat-pseudo-checkbox-checked,
+.mat-accent .mat-pseudo-checkbox-indeterminate {
+    background: red !important;
+}
+
+.mat-list-base {
+    padding-top: 8px;
+    display: flex;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.mat-pseudo-checkbox.mat-pseudo-checkbox-checked,
+.mat-pseudo-checkbox.mat-pseudo-checkbox-indeterminate {
+    display: none;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.content-list {
+    margin-top: 17%
+}
+
+.heart {
+    margin-left: 50%;
+    position: absolute;
+}
+
+.heartZone {
+    margin-left: 61% !important;
+    position: absolute;
+    margin-top: -125%;
+}
+
+.mat-list-text {
+    margin-left: 20%;
+}
+
+.mat-pseudo-checkbox.mat-pseudo-checkbox.mat-pseudo-checkbox-checked {
+    display: none;
+}
+
+.imageSize {
+    width: 205px;
+}
+
+mat-list-option.mat-list-item.mat-list-option.mat-focus-indicator.mat-accent {
+    width: 242px;
+    margin-top: 17%;
+    margin-left: 48%;
+}
